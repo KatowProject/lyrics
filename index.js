@@ -45,4 +45,4 @@ app.get('/search/:query', async (req, res) => {
     });
 });
 
-app.listen(3010, () => console.log('Server started on port 3010'));
+app.listen(process.env.PORT || 3010, () => console.log('Server started on port 3010'));
